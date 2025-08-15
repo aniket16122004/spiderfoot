@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	<section class="py-5 text-center">
+		<h1 class="display-5 fw-bold" style="color: var(--aurum-gold)">Elevate Your Wardrobe</h1>
+		<p class="lead text-secondary">Premium men's fashion by AURUM — Shirts, Trousers, Jackets & Accessories</p>
+		<a class="btn btn-aurum btn-lg mt-2" href="#">Shop New Arrivals</a>
+	</section>
+
+	<section class="row g-3 mt-4">
+		<div class="col-6 col-md-3">
+			<div class="card bg-dark border-secondary h-100">
+				<img src="{% static 'img/placeholder_shirt.jpg' %}" class="card-img-top" alt="Shirts">
+				<div class="card-body">
+					<h5 class="card-title">Shirts</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-3">
+			<div class="card bg-dark border-secondary h-100">
+				<img src="{% static 'img/placeholder_trousers.jpg' %}" class="card-img-top" alt="Trousers">
+				<div class="card-body">
+					<h5 class="card-title">Trousers</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-3">
+			<div class="card bg-dark border-secondary h-100">
+				<img src="{% static 'img/placeholder_jackets.jpg' %}" class="card-img-top" alt="Jackets">
+				<div class="card-body">
+					<h5 class="card-title">Jackets</h5>
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-md-3">
+			<div class="card bg-dark border-secondary h-100">
+				<img src="{% static 'img/placeholder_accessories.jpg' %}" class="card-img-top" alt="Accessories">
+				<div class="card-body">
+					<h5 class="card-title">Accessories</h5>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
